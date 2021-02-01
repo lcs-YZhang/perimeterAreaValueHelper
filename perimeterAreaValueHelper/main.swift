@@ -97,6 +97,12 @@ func volumeOfSquarebasedPyrimd(baseLength: Double, height: Double) -> Double {
 //MARK: FUNC 5
 func volumeOfRectangularPrism(length: Double, height: Double, width: Double) -> Double {
     return width * length * height
+}
+
+//MARK: FUNC 6
+func volumeOfTriangularPrism(baseLength: Double, height: Double, baseHeight: Double) -> Double {
+    return 1/2 * baseLength * baseHeight * height
+}
 
 switch shape {
 case "1":
@@ -159,13 +165,13 @@ case "6":
     print("Please enter the base length:", terminator: "")
     let givenBaseLength = Double(readLine()!)!
     print("Please enter your base height:", terminator: "")
-    let givenWidth = Double(readLine()!)!
+    let givenBaseHeight = Double(readLine()!)!
     print("Please enter your height:", terminator: "")
     let givenHeight = Double(readLine()!)!
     
-    let result5 = volumeOfRectangularPrism(length: givenLength, height: givenHeight, width: givenWidth)
+    let result6 = volumeOfTriangularPrism(baseLength: givenBaseLength, height: givenHeight, baseHeight: givenBaseHeight)
 
-    print("The volme of your sphere is \(result5) cube units")
+    print("The volme of your sphere is \(result6) cube units")
 
 default:
     print("Please enter a valid selection next time.")
