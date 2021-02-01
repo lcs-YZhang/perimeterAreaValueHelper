@@ -39,28 +39,6 @@ let area = areaOfRectangle(length: givenLength, width: givenWidth)
 //MARK: Output
 print("The area is \(area) square units")
 
-
-///// Find the volume of the RectangularPrism
-///// - Parameters:
-/////   - length: The length of the base
-/////   - width: The width of the base
-/////   - height: The height of the prism
-///// - Returns: volume of teh prsim
-//let length1 = 2.0
-//let width1 = 4.0
-//let height1 = 5.0
-//
-//
-//func volumeOfRectangularPrism (length: Double, width: Double, height: Double) -> Double {
-//
-//    return length * width * height
-//
-//}
-//let volume = volumeOfRectangularPrism(length: length1, width: width1, height: height1)
-//
-//
-//print("The volume of the rectangular prism is \(volume) cube units")
-
 //MARK: Input1
 print("Hello, welcome to the volume calculator")
 print("which 3D shapes do you wants to calculate")
@@ -74,12 +52,22 @@ print("Enter your choise: ")
 let shape = readLine()!
 
 print("")
-//MARK: Func 1
+
+//MARK: PROCESS1
+//MARK: FUNC 1
+/// Find the volume of Cylinder
+/// - Parameters:
+///   - radius: the distance of the center of the circle to its outer edge
+///   - height: The distence between  the highest poin to the lowest point
+/// - Returns:  volume of Cylinder
 func volumeOfCylinder(radius: Double, height: Double) -> Double {
     return Double.pi * radius * radius * height
 }
 
 //MARK: FUNC 2
+/// Find the volume of sphere
+/// - Parameter radius: the distance of the center of the circle to its outer edge
+/// - Returns: the volume of sphere
 func volumeOfsphere(radius: Double) -> Double {
     return 4/3 * Double.pi * radius * radius * radius
 }
@@ -103,6 +91,8 @@ func volumeOfRectangularPrism(length: Double, height: Double, width: Double) -> 
 func volumeOfTriangularPrism(baseLength: Double, height: Double, baseHeight: Double) -> Double {
     return 1/2 * baseLength * baseHeight * height
 }
+
+//MARK: OUTPUT1
 
 switch shape {
 case "1":
