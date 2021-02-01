@@ -93,17 +93,23 @@ func volumeOfSquarebasedPyrimd(baseLength: Double, height: Double) -> Double {
 }
 
 //MARK: FUNC 5
-/// Find the volume of retangular Prism
+/// Find the volume of Retangular Prism
 /// - Parameters:
 ///   - length: The length of the rectangal
-///   - height: <#height description#>
-///   - width: <#width description#>
-/// - Returns: <#description#>
+///   - height: The distence between  the highest poin to the lowest point
+///   - width: The width of the rectangal
+/// - Returns: The volume of Retangular Prism
 func volumeOfRectangularPrism(length: Double, height: Double, width: Double) -> Double {
     return width * length * height
 }
 
 //MARK: FUNC 6
+/// Find the volume of Triangular Prism
+/// - Parameters:
+///   - baseLength: The length of the base triangal
+///   - height: The distence from the highest point to the lowest point
+///   - baseHeight: The height of the base triangal
+/// - Returns: The volume of the Trangular prism
 func volumeOfTriangularPrism(baseLength: Double, height: Double, baseHeight: Double) -> Double {
     return 1/2 * baseLength * baseHeight * height
 }
