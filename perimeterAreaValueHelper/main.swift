@@ -73,16 +73,32 @@ func volumeOfsphere(radius: Double) -> Double {
 }
 
 //MARK: FUNC 3
+/// Find the volume of Cone
+/// - Parameters:
+///   - radius: the distance of the center of the circle to its outer edge
+///   - height: The distence between  the highest poin to the lowest point
+/// - Returns: The volume of Cone
 func volumeOfCone(radius: Double, height: Double) -> Double {
     return 1/3 * Double.pi * radius * radius * height
 }
 
 //MARK: FUNC 4
+/// Find the volume of Squarebased Primd
+/// - Parameters:
+///   - baseLength: The length of the square at the base
+///   - height: The distence between  the highest poin to the lowest point
+/// - Returns: The volume of Squarebased Primd
 func volumeOfSquarebasedPyrimd(baseLength: Double, height: Double) -> Double {
     return 1/3  * baseLength * baseLength * height
 }
 
 //MARK: FUNC 5
+/// Find the volume of retangular Prism
+/// - Parameters:
+///   - length: The length of the rectangal
+///   - height: <#height description#>
+///   - width: <#width description#>
+/// - Returns: <#description#>
 func volumeOfRectangularPrism(length: Double, height: Double, width: Double) -> Double {
     return width * length * height
 }
